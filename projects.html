@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Проекты — Айдын</title>
+<meta name="description" content="Проекты Айдына: платформа мониторинга производства, интернет-магазин на Vue.js, мини-приложения на JavaScript, репозитории на GitHub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav__brand" href="index.html">aidyn<span class="prompt-accent">@</span>dev<span class="prompt-accent">:~$</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Открыть меню">menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html">~/home</a></li>
+      <li><a href="projects.html" aria-current="page">~/projects</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: var(--space-4);">
+    <div class="wrap--text">
+      <p class="hero__eyebrow">portfolio / projects</p>
+      <h1 style="font-size: clamp(2rem, 5vw, 3rem);">Проекты</h1>
+      <p class="hero__tagline">Три проекта, над которыми я работал вплотную, и репозитории с GitHub ниже.</p>
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="wrap">
+      <p class="cmd-label">ls ~/projects</p>
+      <h2 class="section-title">Избранное</h2>
+
+      <div class="project-grid">
+
+        <article class="card">
+          <p class="card__index">01 · осень – декабрь 2025</p>
+          <h3>Платформа мониторинга производства</h3>
+          <p>Веб-приложение для цифровизации предприятия по производству традиционных мясных продуктов. MQTT-интеграция с IoT-датчиками, ролевой доступ (RBAC), логирование действий, админ-панель и мультиязычный интерфейс. Задача пришла от реального заказчика через университет.</p>
+          <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MQTT</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">02 · апрель 2026</p>
+          <h3>Интернет-магазин на Vue.js</h3>
+          <p>Полнофункциональный магазин с корзиной и оформлением заказа. Отдельно реализовал ленту рекомендаций: товары представлены как вектора категорий и подкатегорий, поэтому пользователю, смотрящему один товар, подсказываются смежные — часть карточек в ленте нарочно случайна, чтобы не запирать выдачу в одной категории.</p>
+          <div class="badge-row">
+            <span class="badge">Vue.js</span>
+            <span class="badge">Vite</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <p class="card__index">03 · 2025–2026</p>
+          <h3>Мини-приложения на JavaScript</h3>
+          <p>Несколько небольших веб-приложений на чистом JavaScript без фреймворков — практика с DOM, асинхронностью и интеграцией с API.</p>
+          <div class="badge-row">
+            <span class="badge">JavaScript</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="repos">
+    <div class="wrap">
+      <p class="cmd-label">curl api.github.com/users/aidynbot/repos</p>
+      <h2 class="section-title">Репозитории на GitHub</h2>
+      <p class="repo-status" data-repo-status>Загрузка репозиториев...</p>
+      <div class="repo-list" data-repo-list></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Айдын Амантай</span>
+    <span><a href="https://github.com/aidynbot" target="_blank" rel="noopener">github.com/aidynbot</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/github.js"></script>
+</body>
+</html>

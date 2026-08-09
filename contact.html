@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — Айдын</title>
+<meta name="description" content="Свяжитесь с Айдыном: Telegram, WhatsApp, Instagram, LinkedIn, email или форма обратной связи.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav__brand" href="index.html">aidyn<span class="prompt-accent">@</span>dev<span class="prompt-accent">:~$</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Открыть меню">menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html">~/home</a></li>
+      <li><a href="projects.html">~/projects</a></li>
+      <li><a href="contact.html" aria-current="page">~/contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: var(--space-4);">
+    <div class="wrap--text">
+      <p class="hero__eyebrow">portfolio / contact</p>
+      <h1 style="font-size: clamp(2rem, 5vw, 3rem);">Контакты</h1>
+      <p class="hero__tagline">Отвечаю быстрее всего в Telegram. Ниже — все каналы связи и форма для сообщения.</p>
+    </div>
+  </section>
+
+  <section class="contact-links">
+    <div class="wrap--text">
+      <p class="cmd-label">./contact.sh --list</p>
+      <ul class="contact-list">
+        <li>
+          <a href="https://t.me/AidynAmantai" target="_blank" rel="noopener">
+            <span class="label">Telegram</span>
+            <span class="value">@AidynAmantai</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/77473265831" target="_blank" rel="noopener">
+            <span class="label">WhatsApp</span>
+            <span class="value">+7 747 326 58 31</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/a1dyn_amanta1" target="_blank" rel="noopener">
+            <span class="label">Instagram</span>
+            <span class="value">@a1dyn_amanta1</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aidyn-amantai-b141a0333" target="_blank" rel="noopener">
+            <span class="label">LinkedIn</span>
+            <span class="value">aidyn-amantai</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aidynbot" target="_blank" rel="noopener">
+            <span class="label">GitHub</span>
+            <span class="value">@aidynbot</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+77473265831">
+            <span class="label">Телефон</span>
+            <span class="value">+7 747 326 58 31</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:your.email@example.com">
+            <span class="label">Email</span>
+            <span class="value">aidyn.amantai05@gmail.com</span>
+            <span class="arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="wrap--text">
+      <p class="cmd-label">./contact.sh --send</p>
+      <h2 class="section-title">Написать сообщение</h2>
+
+      <form data-contact-form>
+        <div class="form-field">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="email">Ваш email (чтобы я мог ответить)</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn" type="submit">$ send --message</button>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Айдын Амантай</span>
+    <span>built with html · css · js</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact-form.js"></script>
+</body>
+</html>
