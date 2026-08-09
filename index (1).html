@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Айдын — Python Backend Developer</title>
+<meta name="description" content="Айдын — Python backend разработчик. Streamlit, PostgreSQL, MQTT, Vue.js. Портфолио проектов и контакты.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav__brand" href="index.html">aidyn<span class="prompt-accent">@</span>dev<span class="prompt-accent">:~$</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Открыть меню">menu</button>
+    <ul class="nav__links">
+      <li><a href="index.html" aria-current="page">~/home</a></li>
+      <li><a href="projects.html">~/projects</a></li>
+      <li><a href="contact.html">~/contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap--text">
+      <p class="hero__eyebrow">portfolio / v1</p>
+      <h1>Айдын Амантай</h1>
+      <p class="hero__role">Python Backend Developer</p>
+      <p class="hero__tagline"><span data-typewriter>Создаю backend-логику и работаю над full-stack проектами — от базы данных до интерфейса.</span></p>
+      <a class="btn" href="projects.html">$ cd projects/</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap--text">
+      <p class="cmd-label">whoami</p>
+      <h2 class="section-title">Обо мне</h2>
+      <div class="about">
+        <p>Выпускник специальности «Информационные системы» (ЕНУ им. Л.Н. Гумилева, 2022–2026). Разрабатываю backend-логику на Python и собираю вокруг неё рабочие интерфейсы — от простых мини-приложений до систем с реальными пользователями.</p>
+        <p>Последний крупный проект — платформа мониторинга производства для предприятия, выпускающего традиционные мясные продукты: интеграция с MQTT-брокером, ролевой доступ, логирование действий и мультиязычный интерфейс. Задачу поставил реальный заказчик через университет, и разработка велась по гибким практикам — с бэклогом в JIRA и Trello.</p>
+        <p>Кроме backend-части интересуюсь frontend: делал интернет-магазин на Vue.js с собственной логикой рекомендаций и несколько мини-проектов на чистом JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="wrap--text">
+      <p class="cmd-label">cat stack.txt</p>
+      <h2 class="section-title">Стек</h2>
+      <div class="stack-groups">
+        <div class="stack-group">
+          <p class="stack-group__title">Backend</p>
+          <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MQTT</span>
+            <span class="badge">REST API</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group__title">Frontend</p>
+          <div class="badge-row">
+            <span class="badge">Vue.js</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <p class="stack-group__title">Инструменты</p>
+          <div class="badge-row">
+            <span class="badge">Git</span>
+            <span class="badge">JIRA</span>
+            <span class="badge">Trello</span>
+            <span class="badge">Linux (базовое)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="wrap--text">
+      <p class="cmd-label">ls contacts/</p>
+      <h2 class="section-title">На связи</h2>
+      <p style="color:var(--muted); margin-bottom: var(--space-3);">Открыт к предложениям и интересным задачам.</p>
+      <a class="btn btn--ghost" href="contact.html">$ ./contact.sh</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Айдын Амантай</span>
+    <span>built with html · css · js</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
