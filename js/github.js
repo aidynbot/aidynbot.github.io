@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     const repos = await res.json();
-    const visible = repos.filter((r) => !r.fork);
+    const visible = repos.filter(
+      (r) => !r.fork && r.name.toLowerCase() !== `${GITHUB_USERNAME}.github.io`
+    );
 
     if (!visible.length) {
       status.textContent = `Репозитории не найдены для @${GITHUB_USERNAME}.`;
